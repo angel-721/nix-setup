@@ -1,1 +1,10 @@
-vim.cmd("colorscheme habamax")
+vim.o.number = true
+
+vim.o.signcolumn = 'yes'
+
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+
+vim.o.updatetime = 300
+
+vim.o.termguicolors = true

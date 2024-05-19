@@ -12,6 +12,7 @@
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
   home.packages = with pkgs; [
+    doas
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
