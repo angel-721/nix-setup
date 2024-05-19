@@ -53,7 +53,11 @@
   services.xserver = {
     enable = true;
   };
+
   services.xserver.windowManager.dwm.enable = true;
+  services.xserver.windowManager.dwm.package = pkgs.dwm.overrideAttrs {
+    src = /home/angel/.config/dwm;
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
