@@ -47,6 +47,7 @@
       dmenu
       slstatus
       st
+	  google-chrome
     ];
   };
 

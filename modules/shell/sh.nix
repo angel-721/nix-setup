@@ -5,7 +5,7 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      sudo = "doas";
+      ll = "ls -l";
     };
   };
 
