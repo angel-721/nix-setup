@@ -4,7 +4,7 @@ in pkgs.mkShell {
   packages = [
     pkgs.pyright #lsp
     (pkgs.python3.withPackages (python-pkgs: [
-      python-pkgs.pip
+		# Later set this up to read from reqs.txt
     ]))
   ];
 
