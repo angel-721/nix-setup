@@ -45,10 +45,14 @@
     packages = with pkgs; [
       firefox
       dmenu
-      slstatus
+	  (slstatus.overrideAttrs (oldAttrs: {
+	    src = /home/angel/.config/slstatus;
+      }))
 	  alacritty
 	  google-chrome
-	  postman
+	  insomnia
+	  discord
+	  gcc
     ];
   };
 

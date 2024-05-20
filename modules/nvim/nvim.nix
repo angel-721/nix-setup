@@ -49,8 +49,10 @@
           p.tree-sitter-bash
           p.tree-sitter-python
           p.tree-sitter-json
-	  p.tree-sitter-cpp
+	      p.tree-sitter-cpp
+	      p.tree-sitter-c
           p.tree-sitter-css
+          p.tree-sitter-lua
           p.tree-sitter-html
           p.tree-sitter-javascript
           p.tree-sitter-markdown
