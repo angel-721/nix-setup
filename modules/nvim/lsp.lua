@@ -40,3 +40,18 @@ require('lspconfig').pyright.setup{
     capabilities = capabilities,
 }
 
+require('lspconfig').svelte.setup{
+    on_attach = on_attach,
+    capabilities = capabilities,
+}
+
+require('lspconfig').html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+require('lspconfig').tsserver.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  single_file_support = true,
+}

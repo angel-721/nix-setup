@@ -46,8 +46,9 @@
       firefox
       dmenu
       slstatus
-      st
+	  alacritty
 	  google-chrome
+	  postman
     ];
   };
 

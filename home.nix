@@ -4,6 +4,7 @@
   imports = [
     ./modules/shell/sh.nix
     ./modules/nvim/nvim.nix
+    #./modules/polybar/polybar.nix
   ];
 
   home.username = "angel";
@@ -22,7 +23,6 @@
 
   home.sessionVariables = {
      EDITOR = "nvim";
-	 CHROME_PATH = "/nix/store/0w31z7daj9w7qyir3plmnzvsr3vswr7w-user-environment/bin/google-chrome-stable";
   };
 
   # Let Home Manager install and manage itself.
