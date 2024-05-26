@@ -1,11 +1,7 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
-
-
- 
 {
 
-  slstatus-custom = pkgs.callPackage /home/angel/.config/nixpkgs/pgks/slstatus/slstatus.nix;
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -43,6 +39,7 @@
     xkbVariant = "";
   };
 
+
   users.users.angel = {
     isNormalUser = true;
     description = "Angel";
@@ -50,7 +47,9 @@
     packages = with pkgs; [
       firefox
       dmenu
-	  slstatus-custom
+	    (slstatus.overrideAttrs (oldAttrs: {
+	    src = /home/angel/.config/slstatus;
+      }))
 	  alacritty
 	  google-chrome
 	  insomnia
