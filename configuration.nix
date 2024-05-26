@@ -45,9 +45,6 @@
     packages = with pkgs; [
       firefox
       dmenu
-	  (slstatus.overrideAttrs (oldAttrs: {
-	    src = /home/angel/.config/slstatus;
-      }))
 	  alacritty
 	  google-chrome
 	  insomnia
