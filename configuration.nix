@@ -50,6 +50,7 @@
 	    (slstatus.overrideAttrs (oldAttrs: {
 	    src = /home/angel/.config/slstatus;
       }))
+	  feh
 	  alacritty
 	  google-chrome
 	  picom

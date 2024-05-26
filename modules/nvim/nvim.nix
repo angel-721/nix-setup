@@ -21,25 +21,39 @@
 
       cmp_luasnip
       cmp-nvim-lsp
+	  cmp-path
+	  cmp-cmdline
+	  cmp-git
 
       luasnip
       friendly-snippets
 
 
+	  {
+	    plugin = nvim-autopairs;
+	  }
+
       lualine-nvim
       nvim-web-devicons
 	  vim-commentary
 
+	  {
+	    plugin = alpha-nvim;
+	  }
+
+	  gitgutter
+	  nvim-tree-lua
+
       {
         plugin = nvim-lspconfig;
-	type = "lua";
-	config = builtins.readFile(./lsp.lua);
+		type = "lua";
+		config = builtins.readFile(./lsp.lua);
       }
 
       {
         plugin = nvim-cmp;
-	type = "lua";
-	config = builtins.readFile(./cmp.lua);
+		type = "lua";
+		config = builtins.readFile(./cmp.lua);
       }
 
       {
