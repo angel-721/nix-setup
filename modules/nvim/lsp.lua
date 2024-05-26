@@ -55,3 +55,8 @@ require('lspconfig').tsserver.setup {
   capabilities = capabilities,
   single_file_support = true,
 }
+
+require'lspconfig'.clangd.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
