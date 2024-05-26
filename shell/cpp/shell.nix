@@ -13,7 +13,7 @@ in pkgs.mkShell {
 
   shellHook = ''
     echo "You have entered the C++ environment."
-    export PS1="\[\e[0;32m\]C++\[\e[0m\] \W \$ "
+    export PS1="\[[\e[0;32m\]C++:\[\e[0m\]\w \$] "
 
     # Set CPATH
     export CPATH="${lib.makeSearchPathOutput "dev" "include" [pkgs.libcxx]}:${lib.makeSearchPath "resource-root/include" [clang]}"

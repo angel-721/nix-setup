@@ -16,6 +16,6 @@ in pkgs.mkShell {
     echo "You have entered the Node.js environment."
 
     # Change the shell prompt to display "node" (optional)
-    export PS1="\[\e[0;32m\]node\[\e[0m\] \W \$ "
+    export PS1="\[\e[0;32m\]Node\[\e[0m\] \W \$ "
   '';
 }
