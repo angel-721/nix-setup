@@ -14,7 +14,6 @@
     ];
 
     plugins = with pkgs.vimPlugins; [
-      telescope-nvim
       neodev-nvim
       telescope-fzf-native-nvim
 	  copilot-vim
@@ -24,37 +23,41 @@
 	  cmp-path
 	  cmp-cmdline
 	  cmp-git
+	  nvim-surround
 
       luasnip
       friendly-snippets
-
-
-	  {
-	    plugin = nvim-autopairs;
-	  }
-
+	  gitgutter
       lualine-nvim
       nvim-web-devicons
 	  vim-commentary
 
+	  nvim-autopairs
+	  alpha-nvim
+	  conform-nvim
 	  {
-	    plugin = alpha-nvim;
+	    plugin = nvim-tree-lua; 
+		type = "lua";
+		config = builtins.readFile(./plugins/nvim-tree.lua);
 	  }
-
-	  gitgutter
-	  nvim-tree-lua
 
       {
         plugin = nvim-lspconfig;
 		type = "lua";
-		config = builtins.readFile(./lsp.lua);
+		config = builtins.readFile(./plugins/lsp.lua);
       }
 
       {
         plugin = nvim-cmp;
 		type = "lua";
-		config = builtins.readFile(./cmp.lua);
+		config = builtins.readFile(./plugins/cmp.lua);
       }
+      {
+        plugin = telescope-nvim;
+		type = "lua";
+		config = builtins.readFile(./plugins/telescope.lua);
+      }
+      
 
       {
         plugin = (nvim-treesitter.withPlugins (p: [
@@ -73,13 +76,12 @@
           p.tree-sitter-svelte
           p.tree-sitter-nim
         ]));
-	type = "lua";
-        config = builtins.readFile(./treesitter.lua);
+		type = "lua";
+        config = builtins.readFile(./plugins/treesitter.lua);
       }
 
     ];
 
-    
     extraLuaConfig = builtins.readFile(./init.lua);
   };
 
