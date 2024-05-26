@@ -52,6 +52,7 @@
       }))
 	  alacritty
 	  google-chrome
+	  picom
 	  insomnia
 	  discord
 	  gcc
