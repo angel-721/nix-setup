@@ -4,7 +4,6 @@
   imports = [
     ./modules/shell/sh.nix
     ./modules/nvim/nvim.nix
-    ./modules/slstatus/slstatus.nix
   ];
 
   home.username = "angel";

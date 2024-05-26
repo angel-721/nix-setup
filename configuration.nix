@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 
+
+
+ 
 {
+
+  slstatus-custom = pkgs.callPackage /home/angel/.config/nixpkgs/pgks/slstatus/slstatus.nix;
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -45,6 +50,7 @@
     packages = with pkgs; [
       firefox
       dmenu
+	  slstatus-custom
 	  alacritty
 	  google-chrome
 	  insomnia
