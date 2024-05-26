@@ -11,6 +11,7 @@
     extraPackages = with pkgs; [
       ripgrep
       nil # nix langserver
+	  alejandra
     ];
 
     plugins = with pkgs.vimPlugins; [
@@ -34,7 +35,12 @@
 
 	  nvim-autopairs
 	  alpha-nvim
-	  conform-nvim
+
+	  {
+	    plugin = conform-nvim ; 
+		type = "lua";
+		config = builtins.readFile(./plugins/conform.lua);
+	  }
 	  {
 	    plugin = nvim-tree-lua; 
 		type = "lua";

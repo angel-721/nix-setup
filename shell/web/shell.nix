@@ -4,6 +4,7 @@ in pkgs.mkShell {
   packages = with pkgs; [
     nodejs
 	vscode-langservers-extracted
+	prettierd
 
 	(with nodePackages;[
 	  svelte-language-server

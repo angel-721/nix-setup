@@ -16,6 +16,8 @@ in pkgs.mkShell {
     export PS1="\[[\e[0;32m\]C++:\[\e[0m\]\w \$] "
 
     # Set CPATH
-    export CPATH="${lib.makeSearchPathOutput "dev" "include" [pkgs.libcxx]}:${lib.makeSearchPath "resource-root/include" [clang]}"
+    export CPATH=${lib.makeSearchPathOutput "dev" "include" [pkgs.libcxx]}:${lib.makeSearchPath "resource-root/include" [clang]}
+	export PATH=${clang}/bin:$PATH
+
   '';
 }

@@ -3,6 +3,7 @@ let
 in pkgs.mkShell {
   packages = [
     pkgs.pyright #lsp
+	pkgs.ruff #formatter
     (pkgs.python3.withPackages (python-pkgs: [
 		# Later set this up to read from reqs.txt
     ]))
