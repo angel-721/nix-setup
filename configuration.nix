@@ -51,7 +51,6 @@
 	    src = /home/angel/.config/slstatus;
       }))
 	  feh
-	  alacritty
 	  google-chrome
 	  picom
 	  insomnia
@@ -75,6 +74,7 @@
   environment.systemPackages = with pkgs; [
     wget
     git
+	pulseaudio
   ];
 
   #enable sound
