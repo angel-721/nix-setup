@@ -12,6 +12,8 @@
       ripgrep
       nil # nix langserver
 	  alejandra
+	  xclip # for copy to clipboard
+	  codespell
     ];
 
     plugins = with pkgs.vimPlugins; [
@@ -81,6 +83,7 @@
           p.tree-sitter-markdown
           p.tree-sitter-svelte
           p.tree-sitter-nim
+          p.tree-sitter-astro
         ]));
 		type = "lua";
         config = builtins.readFile(./plugins/treesitter.lua);

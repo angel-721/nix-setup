@@ -55,6 +55,7 @@
 	  picom
 	  insomnia
 	  discord
+	  spotify
 	  gcc
     ];
   };
