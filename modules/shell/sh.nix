@@ -10,6 +10,7 @@
 	  getnodeenv = "cp ~/.config/nixos/shell/web/shell.nix .";
 	  getcplusenv = "cp ~/.config/nixos/shell/cpp/shell.nix .";
 	  gonix = "cd ~/.config/nixos/";
+	  g = "google-chrome-stable";
 
 	  n = "nix-shell";
 	  v = "nvim";

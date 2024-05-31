@@ -19,7 +19,7 @@
     plugins = with pkgs.vimPlugins; [
       neodev-nvim
       telescope-fzf-native-nvim
-	  copilot-vim
+	  #copilot-vim
 
       cmp_luasnip
       cmp-nvim-lsp
