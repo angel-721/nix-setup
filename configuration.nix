@@ -55,8 +55,9 @@
 	  picom
 	  insomnia
 	  discord
-	  spotify
 	  gcc
+	  yazi
+	  ueberzugpp
     ];
   };
 

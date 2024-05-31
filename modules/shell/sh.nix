@@ -14,6 +14,7 @@
 
 	  n = "nix-shell";
 	  v = "nvim";
+	  r = "yazi";
     };
 	bashrcExtra = ''source ~/.config/nixos/env.sh'';
   };
