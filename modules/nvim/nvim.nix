@@ -20,6 +20,7 @@
       neodev-nvim
       telescope-fzf-native-nvim
 	  #copilot-vim
+	  tokyonight-nvim
 
       cmp_luasnip
       cmp-nvim-lsp
