@@ -65,3 +65,9 @@ require'lspconfig'.astro.setup{
   on_attach = on_attach,
   capabilities = capabilities,
 }
+
+
+require'lspconfig'.nimls.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+}

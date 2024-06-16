@@ -10,6 +10,7 @@
 	  getpythonenv = "cp ~/.config/nixos/shell/python/shell.nix .";
 	  getnodeenv = "cp ~/.config/nixos/shell/web/shell.nix .";
 	  getcplusenv = "cp ~/.config/nixos/shell/cpp/shell.nix .";
+	  getnimenv = "cp ~/.config/nixos/shell/nim/shell.nix .";
 	  gonix = "cd ~/.config/nixos/";
 	  g = "google-chrome-stable";
 	  n = "nix-shell";
